@@ -12,6 +12,8 @@ $accent:  md-palette($md-amber, A200, A100, A400);
 $theme: md-light-theme($primary, $accent);
 @include angular-material-theme($theme);
 @include material-docs-app-theme($theme);
+@include nav-bar-theme($theme);
+@include home-page-theme($theme);
 
 // Define the dark theme.
 .docs-dark-theme {
@@ -22,4 +24,11 @@ $theme: md-light-theme($primary, $accent);
   $dark-theme: md-dark-theme($dark-primary, $dark-accent, $dark-warn);
   @include angular-material-theme($dark-theme);
   @include material-docs-app-theme($dark-theme);
+  @include nav-bar-theme($dark-theme);
+  @include home-page-theme($dark-theme);
+}
+
+body {
+  font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  margin: 0;
 }
