@@ -5,14 +5,16 @@ $padding-unit: 16px;
 
 .background-sky {
   height: $background-height;
+}
+
+.header-section {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 160px;
 }
 
 .text-headline h1 {
   font-weight: 400;
+  margin-top: 0;
 }
 
 .text-content {
