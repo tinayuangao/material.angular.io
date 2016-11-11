@@ -7,7 +7,7 @@
 
   app-homepage {
     .background-sky {
-      background: url('assets/img/homepage/material_splash.svg') no-repeat bottom center, md-color($primary);
+      background: url('assets/img/homepage/material_splash.svg') repeat bottom center, md-color($primary);
     }
 
     .text-headline {
