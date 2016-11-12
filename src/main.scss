@@ -14,6 +14,7 @@ $theme: md-light-theme($primary, $accent);
 @include material-docs-app-theme($theme);
 @include nav-bar-theme($theme);
 @include home-page-theme($theme);
+@include components-page-theme($theme);
 
 // Define the dark theme.
 .docs-dark-theme {
@@ -26,6 +27,7 @@ $theme: md-light-theme($primary, $accent);
   @include material-docs-app-theme($dark-theme);
   @include nav-bar-theme($dark-theme);
   @include home-page-theme($dark-theme);
+  @include components-page-theme($dark-theme);
 }
 
 body {

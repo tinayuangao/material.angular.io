@@ -6,15 +6,17 @@ import {HttpModule} from '@angular/http';
 import {MaterialModule} from '@angular/material';
 import {MaterialDocsApp} from './material-docs-app';
 import {HomePageComponent} from './pages/homepage/homepage';
-import {NavBarComponent} from './shared/navbar/navbar';
+import {NavBarComponent} from './shared/navbar';
 import {routing} from './routes';
-import {ComponentsPageComponent} from "./pages/components/components";
+import {ComponentsPageComponent} from './pages/components';
+import {DetailPageComponent} from './pages/detail';
 
 
 @NgModule({
   declarations: [
     MaterialDocsApp,
     ComponentsPageComponent,
+    DetailPageComponent,
     HomePageComponent,
     NavBarComponent,
   ],

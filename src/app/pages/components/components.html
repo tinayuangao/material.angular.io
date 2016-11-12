@@ -1,4 +1,57 @@
-<div *ngFor="let component of componentItems">
-  <img src="../../../assets/img/components/{{component.src}}.svg"/>
-  {{component.name}}
+<div class="header-bar">Components</div>
+<div class="component-list">
+  <header class="header-section">
+    <h1>Directory of Design Components</h1>
+    <span class="text-container">
+      Set of high-quality UI components built with Angular 2 and
+      TypeScript, following the Material Design spec
+    </span>
+  </header>
+  <button md-fab color="primary" (click)="switchViewMode()" class="grid-fab">
+    <md-icon>{{viewIcon}}</md-icon>
+  </button>
+  <article [class.grid-view]="gridMode">
+    <!--<div *ngIf="gridMode">-->
+      <!--<div *ngFor="let group of componentGroups" >-->
+        <!--<md-card-title><h3>{{group.name}}</h3></md-card-title>-->
+        <!--<md-card-content>-->
+          <!--<md-grid-list cols="4">-->
+            <!--<md-grid-tile *ngFor="let component of group.list" [routerLink]="component.routerLink">-->
+              <!--<div class="component-chip">-->
+                <!--<div class="component-img"><img [src]="component.imageSrc"/></div>-->
+                <!--<div class="component-name">{{component.name}}</div>-->
+              <!--</div>-->
+            <!--</md-grid-tile>-->
+          <!--</md-grid-list>-->
+        <!--</md-card-content>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<div *ngIf="!gridMode">-->
+      <!--<md-list *ngFor="let group of componentGroups" color="primary">-->
+        <!--<h3>{{group.name}}</h3>-->
+        <!--<md-list-item *ngFor="let component of group.list" [routerLink]="component.routerLink"  color="primary">-->
+            <!--<div class="component-img"><img [src]="component.imageSrc"></div>-->
+            <!--{{component.name}}-->
+        <!--</md-list-item>-->
+      <!--</md-list>-->
+    <!--</div>-->
+
+
+    <div class="text-content">
+      <div *ngFor="let group of componentGroups" class="component-group">
+        <div class="component-group-name">{{group.name}}</div>
+        <div class="component-section">
+          <div *ngFor="let component of group.list">
+            <div class="component-chip"  [routerLink]="component.routerLink" >
+              <div class="component-img"><img [src]="component.imageSrc"/></div>
+              <div class="component-name">{{component.name}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
 </div>
+
+

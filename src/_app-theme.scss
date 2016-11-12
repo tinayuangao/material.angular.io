@@ -1,6 +1,7 @@
 @import '~@angular/material/core/theming/theming';
 @import 'app/pages/homepage/homepage-theme';
 @import 'app/shared/navbar/navbar-theme';
+@import 'app/pages/components/components-theme';
 
 // Styles for the docs app that are based on the current theme.
 @mixin material-docs-app-theme($theme) {
@@ -12,5 +13,6 @@
 
   material-docs-app {
     background: md-color($background, background);
+    color: md-color($primary, 800);
   }
 }
