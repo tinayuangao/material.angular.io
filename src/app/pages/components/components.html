@@ -1,24 +1,24 @@
-<div class="header-bar">Components</div>
-<div class="component-list">
-  <header class="header-section">
+<div class="docs-components-header-bar">Components</div>
+<div class="docs-components-component-list">
+  <div class="docs-components-header-section">
     <h1>Directory of Design Components</h1>
-    <span class="text-container">
+    <p>
       Set of high-quality UI components built with Angular 2 and
       TypeScript, following the Material Design spec
-    </span>
-  </header>
-  <button md-fab color="primary" (click)="switchViewMode()" class="grid-fab">
-    <md-icon>{{viewIcon}}</md-icon>
-  </button>
-  <div [class.grid-view]="gridMode">
-    <div class="text-content">
-      <div *ngFor="let group of componentGroups" class="component-group">
-        <div class="component-group-name">{{group.name}}</div>
-        <div class="component-section">
+    </p>
+  </div>
+  <div [class.docs-components-grid-view]="gridMode" class="docs-components-view">
+    <button md-fab color="primary" (click)="switchViewMode()" class="docs-components-grid-fab">
+      <md-icon>{{viewIcon}}</md-icon>
+    </button>
+    <div class="docs-components-list">
+      <div *ngFor="let group of componentGroups" class="docs-components-group">
+        <div class="docs-components-group-name">{{group.name}}</div>
+        <div class="docs-components-section">
           <div *ngFor="let component of group.list">
-            <div class="component-chip"  [routerLink]="component.routerLink" >
-              <div class="component-img"><img [src]="component.imageSrc"/></div>
-              <div class="component-name">{{component.name}}</div>
+            <div class="docs-component-chip"  [routerLink]="component.routerLink" >
+              <div class="docs-component-img"><img [src]="component.imageSrc"/></div>
+              <div class="docs-component-name">{{component.name}}</div>
             </div>
           </div>
         </div>

@@ -1,95 +1,86 @@
-$content-width: 920px;
-
-.component-list {
-  h1, h3 {
-    font-weight: 400;
-  }
-}
-
-.header-bar {
+.docs-components-header-bar {
   padding: 16px 32px;
   font-size: 20px;
   text-transform: uppercase;
 }
 
-.header-section {
+.docs-components-header-section {
   text-align: center;
-  margin: 60px auto 0;
-  width: 80%;
-
-  @media(max-width: 599px) {
-    width: 90%;
-  }
+  margin: 32px 0;
 }
 
-.text-container {
-  line-height: 2;
+.docs-components-component-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.grid-fab {
+.docs-components-grid-fab {
   float: right;
   margin: 24px;
 }
 
-.text-content {
-  margin: 100px auto 20px;
-  max-width: $content-width;
-  width: 60%;
-  border: 1px solid grey;
+.docs-components-list {
+  margin-top: 104px;
 }
 
-.component-group-name {
-  background: lightgray;
+.docs-components-view {
+  width: 80%;
+}
+
+.docs-components-group-name {
   padding: 16px;
 }
-.component-img {
+.docs-component-img {
   min-width: 88px;
 }
 
-.component-chip {
+.docs-component-chip {
   display: flex;
   flex-direction: row;
   height: 56px;
   align-items: center;
   padding: 8px 16px;
-  border-bottom: solid 1px lightgray;
 }
 
-.grid-view {
-
-  .text-content {
+.docs-components-grid-view {
+  .docs-components-list {
     border: none;
   }
 
-  .component-group-name {
+  .docs-components-section {
+    display: flex;
+  }
+
+  .docs-components-group {
+    margin-bottom: 32px;
+  }
+
+  .docs-components-group-name {
     background: transparent;
     font-size: 18px;
   }
 
-  .component-chip {
+  .docs-component-chip {
     flex-direction: column;
     border: none;
     height: inherit;
   }
 
-  .component-img {
+  .docs-component-img {
     width: 200px;
     height: 160px;
     text-align: center;
     vertical-align: middle;
-
-    img {
-      margin: 24px;
-      width: 60%;
-    }
   }
 
-  .component-name {
+  .docs-component-img img {
+    margin: 24px;
+    width: 60%;
+  }
+
+  .docs-component-name {
     justify-content: center;
-  }
-
-  .component-section {
-    display: flex;
-    flex-direction: row;
   }
 }

@@ -6,9 +6,21 @@
   $foreground: map-get($theme, foreground);
 
   app-components {
-    .header-bar {
+    .docs-components-header-bar {
       background: md-color($primary);
       color: md-color($primary, default-contrast);
+    }
+
+    .docs-component-chip:not(:last-child) {
+      border-bottom: solid 1px md-color($foreground, divider);
+    }
+
+    .docs-components-group-name {
+      background: md-color($foreground, divider);
+    }
+
+    .docs-components-list {
+      border: 1px solid md-color($foreground, divider);
     }
   }
 }
