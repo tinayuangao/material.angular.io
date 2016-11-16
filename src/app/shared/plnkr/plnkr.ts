@@ -7,12 +7,6 @@ import { PlunkerUtil } from './plnkr-util';
   templateUrl: 'plnkr.html',
 })
 export class Plunker implements OnInit {
-  PLUNKER_URL: string = 'http://plnkr.co/edit/?p=preview';
-  COPYRIGHT =
-    `Copyright 2016 Google Inc. All Rights Reserved.
-    Use of this source code is governed by an MIT-style license that
-    can be found in the LICENSE file at http://angular.io/license`;
-
   private _description: string = 'Some description for material';
 
   @Input()
@@ -49,4 +43,3 @@ export class Plunker implements OnInit {
     this.plunkerUtil.openPlunker();
   }
 }
-
