@@ -7,6 +7,7 @@ import {MaterialModule} from '@angular/material';
 import {MaterialDocsApp} from './material-docs-app';
 import {HomePageComponent} from './pages/homepage/homepage';
 import {NavBarComponent} from './shared/navbar';
+import {Plunker} from './shared/plnkr';
 import {routing} from './routes';
 import {ComponentsPageComponent} from './pages/components';
 import {DetailPageComponent} from './pages/detail';
@@ -19,6 +20,7 @@ import {DetailPageComponent} from './pages/detail';
     DetailPageComponent,
     HomePageComponent,
     NavBarComponent,
+    Plunker,
   ],
   imports: [
     BrowserModule,
