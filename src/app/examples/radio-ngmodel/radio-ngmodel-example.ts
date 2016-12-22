@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
   templateUrl: './radio-ngmodel-example.html',
   styleUrls: ['./radio-ngmodel-example.css'],
 })
-export class RadioNgModelExample {
+export class RadioNgmodelExample {
   favoriteSeason: string;
 
   seasons = [
